@@ -1,10 +1,11 @@
 import React from 'react';
-import Signup from './Components/Signup';
+import Payment from './Components/Payment';
 
 const App = () => {
   return (
     <>
-    <Signup/>
+    {/* <Signup/> */}
+    <Payment/>
     </>
   );
 }
