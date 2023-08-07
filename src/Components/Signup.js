@@ -12,7 +12,7 @@ const Signup = () => {
     ];
 
     const containerStyles = {
-        width : "100%",
+        width: "100%",
         height: "100%",
         margin: "auto 80%",
     };
@@ -24,12 +24,14 @@ const Signup = () => {
 
                         <div className="signup-img">
                             <div className='img-container'>
-                            <ImageSlider slides={slides}/>
+                                <ImageSlider slides={slides} />
                             </div>
                         </div>
 
                         <div className="signup-form">
-                            <h2 className="form-title">Sign Up</h2>
+                            <div className="form-header">
+                                <h2 className="form-title">Sign Up</h2>
+                            </div>
                             <form action="" className="register-form" id='register-form'>
                                 <div className="form-group">
                                     <label htmlFor="name">
@@ -72,11 +74,26 @@ const Signup = () => {
                                     <input type="submit" name='signup' id='signup' value='Register' className='form-submit' />
                                 </div>
                             </form>
-                            <div className="other-btn">
-                                <a href=""><i class="zmdi zmdi-google material-icons-name"></i></a>
-                                <a href=""><i class="zmdi zmdi-facebook material-icons-name"></i></a>
-                                <a href=""><i class="zmdi zmdi-linkedin material-icons-name"></i></a>
 
+                            <div className="lower-text">
+                                <h5>or register with</h5>
+                            </div>
+                            <div className="other-btn">
+                                {/* <a href=""><i class="zmdi zmdi-google material-icons-name"></i></a>
+                                <a href=""></a>
+                                <a href=""></a> */}
+                                <div className="social">
+                                    <div className="google">
+                                        <i class="zmdi zmdi-google material-icons-name"></i>google</div>
+                                    <div className="facebook">
+                                        <i class="zmdi zmdi-facebook material-icons-name"></i>facebook</div>
+                                    <div className="linkedin">
+                                        <i class="zmdi zmdi-linkedin material-icons-name"></i>linkedin</div>
+                                </div>
+                                <div className="footer-link">
+                                    <h5 className='form-subtitle'>Already a member? <a href="#">Login</a> </h5>
+
+                                </div>
                             </div>
                         </div>
                     </div>
